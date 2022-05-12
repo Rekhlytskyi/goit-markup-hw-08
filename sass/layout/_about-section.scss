@@ -1,0 +1,35 @@
+    .section--about {
+            display: none;
+        }
+
+
+// .section--about {
+//     padding-top: 0;
+// }
+
+.about {
+    @extend .list;
+    display: flex;
+    column-gap: 30px;
+}
+
+.about__item-wrapper {
+    position: relative;
+}
+
+.about__description {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--hero-footer-text-color);
+}

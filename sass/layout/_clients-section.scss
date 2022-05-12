@@ -1,0 +1,83 @@
+
+.clients-list {
+        @extend .list;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+.client__link {
+    @extend .link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid var(--icon-client-social);
+    box-sizing: border-box;
+    border-radius: 4px;
+    @extend %link-transition;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: var(--highlight-color);
+        fill: var(--highlight-color);
+    }
+}
+
+.client__logo {
+    @include icon-size(106px, 60px);
+    fill: var(--icon-client-social);
+    @extend %icon-transition;
+
+    .client__link:hover &,
+    .client__link:focus &,
+    .client__link:active & {
+        border-color: var(--highlight-color);
+        fill: var(--highlight-color);
+    }
+}
+
+// .clients-list {
+//     @extend .list;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     column-gap: 30px;
+// }
+
+// .client__link {
+//     @extend .link;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--icon-client-social);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     @extend %link-transition;
+
+//     &:hover, 
+//     &:active, 
+//     &:focus {
+//         border-color: var(--highlight-color);
+//         fill: var(--highlight-color);
+//     }
+// }
+
+// .client__logo {
+//     @include icon-size(106px, 60px);
+//     fill: var(--icon-client-social);
+//     @extend %icon-transition;
+
+//         .client__link:hover &,
+//         .client__link:focus &,
+//         .client__link:active & {
+//             border-color: var(--highlight-color);
+//             fill: var(--highlight-color);
+//         }
+// }

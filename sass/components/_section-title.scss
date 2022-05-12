@@ -1,0 +1,17 @@
+.section__title {
+            @extend .heading;
+            @include font(28px, 700, 33px, 00.03em);
+            text-align: center;
+            color: var(--main-color);
+            margin-bottom: 30px;
+        }
+
+
+
+// .section__title {
+//     @extend .heading;
+//     @include font(36px, 700, 1.17, 00.03em);
+//     text-align: center;
+//     color: var(--main-color);
+//     margin-bottom: 50px;
+// }

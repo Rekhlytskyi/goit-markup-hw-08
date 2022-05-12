@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Порфтолио</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container__header">
+        <a href="index.html" lang="en" class="logo logo__header"
+          >Web<span class="logo__span">Studio</span></a
+        >
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">Студия</a>
+            </li>
+            <li class="navigation-list__item">
+              <a
+                href="portfolio.html"
+                class="navigation-list__link navigation-list__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list">
+          <li class="contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              lang="en"
+              class="contacts__link"
+            >
+              <svg width="16" height="12" class="contact__icon">
+                <use href="./img/main-page/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg width="10" height="16" class="contact__icon">
+                <use href="./img/main-page/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="filter-div">
+            <h1 class="filter-div__title">Портфолио</h1>
+            <ul class="filter-div-list">
+              <li>
+                <button type="button" class="filter-div-list__button">
+                  Все
+                </button>
+              </li>
+              <li>
+                <button type="button" class="filter-div-list__button">
+                  Веб-сайты
+                </button>
+              </li>
+              <li>
+                <button type="button" class="filter-div-list__button">
+                  Приложения
+                </button>
+              </li>
+              <li>
+                <button type="button" class="filter-div-list__button">
+                  Дизайн
+                </button>
+              </li>
+              <li>
+                <button type="button" class="filter-div-list__button">
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="credentials-div">
+            <ul class="credentials-list">
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/technocrack.jpg"
+                      alt="Технокряк"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">Технокряк</h2>
+                    <p class="credential-item-description">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/basketball.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="credential-item-description">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/seafood-restaurant.jpg"
+                      alt="Ресторан Seafood"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">Ресторан Seafood</h2>
+                    <p class="credential-item-description">Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/prime.jpg"
+                      alt="Проект Prime"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">Проект Prime</h2>
+                    <p class="credential-item-description">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/boxes.jpg"
+                      alt="Проект Boxes"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">Проект Boxes</h2>
+                    <p class="credential-item-description">Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/inspiration-site.jpg"
+                      alt="Веб-сайт Inspiration has no Borders"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="credential-item-description">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/limited-edition.jpg"
+                      alt="Издание Limited Edition"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">
+                      Издание Limited Edition
+                    </h2>
+                    <p class="credential-item-description">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/lab.jpg"
+                      alt="Проект LAB"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">Проект LAB</h2>
+                    <p class="credential-item-description">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="credentials-list__item">
+                <a href="#" class="credential-list__link">
+                  <div class="credential-overlay">
+                    <img
+                      class="img"
+                      src="./img/portfolio-page/growing-business.jpg"
+                      alt="Growing Business"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="credential-overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="credential-item-text">
+                    <h2 class="credential-item-title">Growing Business</h2>
+                    <p class="credential-item-description">Приложение</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container container--footer">
+        <div>
+          <a href="index.html" lang="en" class="logo logo--footer"
+            >Web<span class="logo__span">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="address-list">
+              <li>
+                <a
+                  href="https://goo.gl/maps/tpaRSA4jknoYASsn6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="address-list__link--location"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-list__link">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-list__link--mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__link">
+                <a href="tel:+380961111111" class="address-list__link--tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-div">
+          <p class="join-div__title">Присоединяйтесь</p>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-list__link social-list__link--footer">
+                <svg class="social__icon social__icon--footer">
+                  <use href="./img/main-page/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-list__link social-list__link--footer">
+                <svg class="social__icon social__icon--footer">
+                  <use href="./img/main-page/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-list__link social-list__link--footer"
+                ><svg class="social__icon social__icon--footer">
+                  <use href="./img/main-page/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-list__link social-list__link--footer"
+                ><svg class="social__icon social__icon--footer">
+                  <use href="./img/main-page/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-div">
+          <p class="subscribe-div__title">Подпишитесь на рассылку</p>
+          <form action="javascript:void(0);">
+            <div class="subscribe-div__wrapper">
+              <input
+                type="email"
+                name="email"
+                id="footer-email"
+                placeholder="Email"
+                class="subscribe-div__input"
+                required
+              />
+              <button class="subscribe-div__btn" type="submit">
+                Подписаться
+                <svg class="subscribe-icon">
+                  <use href="./img/main-page/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
