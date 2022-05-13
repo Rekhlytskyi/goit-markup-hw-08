@@ -45,6 +45,16 @@
     }
     
     .advantages__item {
-        width: 354px;
+        max-width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        flex-wrap: nowrap;
+    }
+
+    .advantages__item {
+        max-width: 270px;
     }
 }

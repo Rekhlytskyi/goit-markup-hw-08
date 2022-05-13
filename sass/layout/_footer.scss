@@ -3,11 +3,15 @@
         padding: 60px 0;
     }
 
+
+
 .container--footer,
 .footer__wrapper--contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer__wrapper--contacts {
@@ -82,21 +86,17 @@
 .social__icon--footer {
     fill: #fff;
 }
-
-// .subscribe-div,
-// .subscribe-div__wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     row-gap: 20px;
-// }
-
-// .subscribe-div {
-//     min-width: 480px;
-// }
+// subscribe
+.subscribe-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+}
 
 .subscribe-div__title {
-    margin: 0 auto 20px auto;
+    margin: 0 0 20px 0;
+    text-align: center;
     @include font(14px, 700, 1.22, 00.03em);
     color: var(--advantages-icon-background-color);
     text-transform: uppercase;
@@ -105,8 +105,7 @@
 .subscribe__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    align-items: center; 
 }
 
 .subscribe-div__input {
@@ -180,10 +179,56 @@
 
     .footer__wrapper--contacts {
         margin-left: 75px;
-        margin-right: 125px;
+        margin-right: 165px;
+    }
+
+    .subscribe-div {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .container--footer {
+        flex-wrap: nowrap;
+    }
+
+    .footer__wrapper--contacts {
+        display: block;
+        margin-left: 0;
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
+
+    .address-list {
+        display: block;
+    }
+
+    .join-div {
+        display: block;
+        margin-right: 93px;
+    }
+    .subscribe-div {
+        width: auto;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .subscribe-div__title {
+        text-align: left;
+    }
+
+    .subscribe__form {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .subscribe-div__input {
+        width: 358px;
+        margin-right: 12px;
+    }
+}
 
 
 

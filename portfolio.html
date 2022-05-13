@@ -26,6 +26,11 @@
         <a href="index.html" lang="en" class="logo logo__header"
           >Web<span class="logo__span">Studio</span></a
         >
+        <button type="button" class="mobile-btn-menu" data-menu-open>
+          <svg class="mobile-btn-menu__icon" width="24" height="16">
+            <use href="./img/main-page/sprite.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-list__item">
@@ -65,6 +70,64 @@
             >
           </li>
         </ul>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./img/main-page/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-nav__list">
+            <li class="mobile-menu-nav__item">
+              <a href="index.html" class="mobile-menu-nav__link">Студия</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a
+                href="portfolio.html"
+                class="mobile-menu-nav__link mobile-menu-nav__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a href="#" class="mobile-menu-nav__link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-contact__list">
+            <li class="mobile-menu-contact__item">
+              <a
+                href="tel:+380961111111"
+                class="mobile-menu-contact__link mobile-menu-contact__link--tel"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contact__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu-contact__link mobile-menu-contact__link--mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-social__list">
+            <li class="mobile-menu-social__item">
+              <a href="#" class="mobile-menu-social__link">Instagram</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a href="#" class="mobile-menu-social__link">Twitter</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a href="#" class="mobile-menu-social__link">Facebook</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a href="#" class="mobile-menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -107,11 +170,9 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/technocrack.jpg"
                       alt="Технокряк"
-                      width="370"
-                      height="294"
                     />
                     <p class="credential-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -130,7 +191,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/basketball.jpg"
                       alt="Постер New Orlean vs Golden Star"
                       width="370"
@@ -155,7 +216,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/seafood-restaurant.jpg"
                       alt="Ресторан Seafood"
                       width="370"
@@ -178,7 +239,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/prime.jpg"
                       alt="Проект Prime"
                       width="370"
@@ -201,7 +262,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/boxes.jpg"
                       alt="Проект Boxes"
                       width="370"
@@ -224,7 +285,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/inspiration-site.jpg"
                       alt="Веб-сайт Inspiration has no Borders"
                       width="370"
@@ -249,7 +310,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/limited-edition.jpg"
                       alt="Издание Limited Edition"
                       width="370"
@@ -274,7 +335,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/lab.jpg"
                       alt="Проект LAB"
                       width="370"
@@ -297,7 +358,7 @@
                 <a href="#" class="credential-list__link">
                   <div class="credential-overlay">
                     <img
-                      class="img"
+                      class="img credentials-img"
                       src="./img/portfolio-page/growing-business.jpg"
                       alt="Growing Business"
                       width="370"
@@ -323,30 +384,32 @@
     </main>
     <footer class="footer">
       <div class="container container--footer">
-        <div>
+        <div class="footer__wrapper--contacts">
           <a href="index.html" lang="en" class="logo logo--footer"
             >Web<span class="logo__span">Studio</span>
           </a>
           <address class="address">
             <ul class="address-list">
-              <li>
+              <li class="address-list__item">
                 <a
                   href="https://goo.gl/maps/tpaRSA4jknoYASsn6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="address-list__link--location"
+                  class="address-list__link address-list__link--location"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="address-list__link">
+              <li class="address-list__item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="address-list__link--mail"
+                  class="address-list__link address-list__link--mail"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-list__link">
-                <a href="tel:+380961111111" class="address-list__link--tel"
+              <li class="address-list__item">
+                <a
+                  href="tel:+380961111111"
+                  class="address-list__link address-list__link--tel"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -388,26 +451,115 @@
         </div>
         <div class="subscribe-div">
           <p class="subscribe-div__title">Подпишитесь на рассылку</p>
-          <form action="javascript:void(0);">
-            <div class="subscribe-div__wrapper">
-              <input
-                type="email"
-                name="email"
-                id="footer-email"
-                placeholder="Email"
-                class="subscribe-div__input"
-                required
-              />
-              <button class="subscribe-div__btn" type="submit">
-                Подписаться
-                <svg class="subscribe-icon">
-                  <use href="./img/main-page/sprite.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <form action="javascript:void(0);" class="subscribe__form">
+            <!-- <div class="subscribe-div__wrapper"> -->
+            <input
+              type="email"
+              name="email"
+              id="footer-email"
+              placeholder="Email"
+              class="subscribe-div__input"
+              required
+            />
+            <button class="subscribe-div__btn" type="submit">
+              Подписаться
+              <svg class="subscribe-icon">
+                <use href="./img/main-page/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+            <!-- </div> -->
           </form>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close-btn" type="button" data-modal-close>
+          <svg class="close-icon">
+            <use href="./img/main-page/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="" class="modal-form">
+          <div class="modal-form__container">
+            <label for="user-name" class="modal-form__label">Имя</label>
+            <div class="modal-form__wrapper">
+              <input
+                type="text"
+                class="modal-form__input"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg class="modal-form__icon">
+                <use href="./img/main-page/sprite.svg#icon-username"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form__container">
+            <label for="user-tel" class="modal-form__label">Телефон</label>
+            <div class="modal-form__wrapper">
+              <input
+                type="text"
+                class="modal-form__input"
+                name="user-tel"
+                id="user-tel"
+                required
+              />
+              <svg class="modal-form__icon">
+                <use href="./img/main-page/sprite.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form__container">
+            <label for="user-mail" class="modal-form__label">Почта</label>
+            <div class="modal-form__wrapper">
+              <input
+                type="text"
+                class="modal-form__input"
+                name="user-mail"
+                id="user-mail"
+                required
+              />
+              <svg class="modal-form__icon">
+                <use href="./img/main-page/sprite.svg#icon-mail-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form__container">
+            <label for="commentary" class="modal-form__label"
+              >Комментарий</label
+            >
+            <textarea
+              type="text"
+              class="modal-form__input"
+              name="commentary"
+              id="commentary"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+        </form>
+        <form action="javascript:void(0);">
+          <div class="consent">
+            <input
+              type="checkbox"
+              name="consent"
+              id="user_consent"
+              class="consent__checkbox visually-hidden"
+              required
+            />
+            <label for="user_consent" class="consent__text"
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="#" class="consent__link">Условия договора</a></label
+            >
+          </div>
+          <button type="submit" class="modal-form__submit-btn">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
