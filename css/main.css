@@ -675,10 +675,16 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main-page/mobile-480px/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main-page/mobile-480px/hero-mobile@x1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .order-section {
+    background-image: url(../img/main-page/mobile-480px/hero-mobile@x2.jpg);
+  }
 }
 
 .order-section__container {
@@ -700,18 +706,33 @@ body {
 
 @media screen and (min-width: 768px) {
   .order-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main-page/tablet-768px/hero-img-768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main-page/tablet-768px/hero-tablet@x1.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ration: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .order-section {
+    background-image: url(../img/main-page/tablet-768px/hero-tablet@x2.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .order-section {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main-page/desctop-1200px/hero-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main-page/desktop-1200px/hero-desktop@x1.jpg);
     background-size: 1600px;
     padding-bottom: 200px;
     padding-top: 200px;
   }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .order-section {
+    background-image: url(/img/main-page/desktop-1200px/hero-desktop@x2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .order-section__title {
     font-size: 44px;
     line-height: 1.36;
@@ -903,6 +924,12 @@ body {
   row-gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .clients-list {
+    justify-content: space-between;
+  }
+}
+
 .client__link {
   display: flex;
   align-items: center;
@@ -917,6 +944,18 @@ body {
 .client__link:hover, .client__link:active, .client__link:focus {
   border-color: var(--highlight-color);
   fill: var(--highlight-color);
+}
+
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
 }
 
 .client__logo {
@@ -935,9 +974,6 @@ body {
 @media screen and (min-width: 1200px) {
   .clients-list {
     flex-wrap: nowrap;
-  }
-  .client__link {
-    max-width: 170px;
   }
 }
 
@@ -1145,8 +1181,7 @@ body {
   .subscribe-div {
     width: auto;
     max-width: none;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
   .subscribe-div__title {
     text-align: left;
@@ -1210,41 +1245,25 @@ body {
 
 .credentials-list {
   display: flex;
-  flex-direction: column;
   row-gap: 30px;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .credentials-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 30px;
+    justify-content: space-between;
   }
 }
 
-.credentials-list__item {
-  border: 1px solid #eee;
-  border-top: none;
-}
-
 .credential-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 .credential-list__link:hover, .credential-list__link:focus, .credential-list__link:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   opacity: 1;
-}
-
-.credentials-img {
-  width: 290px;
-}
-
-@media screen and (min-width: 768px) {
-  .credentials-img {
-    width: auto;
-  }
 }
 
 .credential-overlay {
@@ -1261,7 +1280,6 @@ body {
   background-color: var(--highlight-color);
   left: 0;
   top: 0;
-  width: 100%;
   height: 100%;
   font-weight: 400;
   font-size: 18px;
@@ -1280,6 +1298,7 @@ body {
 }
 
 .credential-item-title {
+  display: inline-block;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1287,16 +1306,24 @@ body {
   color: var(--main-color);
 }
 
+@media screen and (min-width: 768px) {
+  .credential-item-title {
+    max-width: 306px;
+  }
+}
+
 .credential-item-description {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   color: var(--aux-text-color);
   margin: 0;
 }
 
 .credential-item-text {
-  display: block;
+  flex-grow: 1;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 /*# sourceMappingURL=main.css.map */

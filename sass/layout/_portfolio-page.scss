@@ -52,33 +52,19 @@
 .credentials-list {
     @extend .list;
     display: flex;
-    flex-direction: column;
     row-gap: 30px;
+    flex-wrap: wrap;
 
     @media screen and (min-width: 768px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 30px;
-    }
-}
 
-.credentials-list__item {
-    // max-width: 450px;
-    border: 1px solid #eee;
-        border-top: none;
-
-    @media screen and (min-width: 768px) {
-        // max-width: 354px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        // max-width: 370px;
+        justify-content: space-between;
     }
 }
 
 .credential-list__link {
     @extend .link;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
 
     &:hover,
@@ -89,14 +75,6 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
         opacity: 1;
 }
-}
-
-.credentials-img {
-    width: 290px;
-
-    @media screen and (min-width: 768px) {
-        width: auto;
-    }
 }
 
 .credential-overlay {
@@ -113,7 +91,6 @@
     background-color: var(--highlight-color);
     left: 0;
     top: 0;
-    width: 100%;
     height: 100%;
     font-weight: 400;
     font-size: 18px;
@@ -132,23 +109,30 @@
 }
 
 .credential-item-title {
+    display: inline-block;
     @extend .heading;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
     color: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+        max-width: 306px;
+    }
 }
 
 .credential-item-description {
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     color: var(--aux-text-color);
     margin: 0;
 }
 
 .credential-item-text {
-    display: block;
+    flex-grow: 1;
     padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
 }

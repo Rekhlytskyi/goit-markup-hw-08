@@ -5,6 +5,10 @@
         justify-content: center;
         column-gap: 30px;
         row-gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            justify-content: space-between;
+        }
     }
 
 .client__link {
@@ -25,6 +29,14 @@
         border-color: var(--highlight-color);
         fill: var(--highlight-color);
     }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 
 .client__logo {
@@ -44,10 +56,6 @@
     .clients-list {
         flex-wrap: nowrap;
     }
-    
-    .client__link {
-        max-width: 170px;
-    }    
 }
 // .clients-list {
 //     @extend .list;
