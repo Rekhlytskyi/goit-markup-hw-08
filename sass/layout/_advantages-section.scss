@@ -1,7 +1,7 @@
 .advantages {
     @extend .list;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     row-gap: 30px;
 }
 
@@ -46,6 +46,10 @@
     
     .advantages__item {
         max-width: 354px;
+    }
+
+    .advantages__title {
+        text-align: left;
     }
 }
 

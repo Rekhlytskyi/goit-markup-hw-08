@@ -2,7 +2,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 118px 0;
-    max-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(../img/main-page/mobile-480px/hero-img.jpg);
@@ -12,9 +11,7 @@
 }
 
 .order-section__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+text-align: center;
 }
 
 .order-section__title {
@@ -29,7 +26,6 @@
 
 @media screen and (min-width: 768px) {
     .order-section {
-        max-width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../img/main-page/tablet-768px/hero-img-768.jpg);

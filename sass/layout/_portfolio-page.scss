@@ -1,33 +1,27 @@
-.filter-div {
-    margin-bottom: 40px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-    }
-}
-
-.filter-div__title {
+.filter__title {
     display: none;
 }
 
-.filter-div-list {
+.filter-list {
     @extend .list; 
     display: flex;
     flex-wrap: wrap;
     column-gap: 8px;
     row-gap: 15px;
+    margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
        justify-content: center; 
+       margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
     }
     
 }
 
-.filter-div-list__button {
+.filter-list__button {
     @extend .button;
     padding: 6px 22px;
     @include font(16px, 500, 1.62, 0.03em);
@@ -69,16 +63,16 @@
 }
 
 .credentials-list__item {
-    max-width: 450px;
+    // max-width: 450px;
     border: 1px solid #eee;
         border-top: none;
 
     @media screen and (min-width: 768px) {
-        max-width: 354px;
+        // max-width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 370px;
+        // max-width: 370px;
     }
 }
 
