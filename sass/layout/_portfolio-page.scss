@@ -80,6 +80,7 @@
 .credential-overlay {
     position: relative;
     overflow: hidden;
+    max-height: 294px;
 }
 
 .credential-overlay__text {
@@ -120,6 +121,10 @@
     @media screen and (min-width: 768px) {
         max-width: 306px;
     }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 322px;
+    }
 }
 
 .credential-item-description {
@@ -135,4 +140,12 @@
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 }

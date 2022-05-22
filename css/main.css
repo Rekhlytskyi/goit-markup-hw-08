@@ -1269,6 +1269,7 @@ body {
 .credential-overlay {
   position: relative;
   overflow: hidden;
+  max-height: 294px;
 }
 
 .credential-overlay__text {
@@ -1312,6 +1313,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .credential-item-title {
+    max-width: 322px;
+  }
+}
+
 .credential-item-description {
   font-size: 16px;
   line-height: 1.87;
@@ -1325,5 +1332,17 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  .credential-item-text {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .credential-item-text {
+    width: 370px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
