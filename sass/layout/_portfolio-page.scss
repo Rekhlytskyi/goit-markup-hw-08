@@ -51,12 +51,11 @@
 
 .credentials-list {
     @extend .list;
-    display: flex;
-    row-gap: 30px;
-    flex-wrap: wrap;
 
     @media screen and (min-width: 768px) {
-
+        display: flex;
+        row-gap: 30px;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 }
@@ -75,6 +74,14 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
         opacity: 1;
 }
+}
+
+.credentials-list__item {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .credential-overlay {
@@ -140,12 +147,4 @@
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
-
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 370px;
-    }
 }

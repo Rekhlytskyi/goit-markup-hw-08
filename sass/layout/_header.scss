@@ -170,9 +170,12 @@
     .container__header {
         display: flex;
         align-items: center;
-        justify-content: left;
         justify-content: space-between;
         height: 80px;
+
+        @media screen and (min-width:1200px) {
+            justify-content: left;
+        }
     }
     
     .mobile-btn-menu,
@@ -197,6 +200,11 @@
         color: inherit;
 
         @include font(14px, 500, 1.19, 000.02em);
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 83px;
+            margin-right: 305px;
+        }
     }
 
     .navigation-list__link {
